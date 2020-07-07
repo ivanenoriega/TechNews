@@ -1,0 +1,53 @@
+/* Color Theme Swatches in Hex */
+$backColor: #FFFFFF;
+$firstColor: #6B7A75;
+$secondColor: #D9ACA3;
+$thirdColor: #B6BFA8;
+$fourthColor: #F2E4DB;
+
+/*Fonts*/
+$mainTitleFont: 'Montserrat Subrayada', sans-serif;
+$titleFont: 'Roboto Slab', serif;
+$textFont: 'Lato', sans-serif;
+
+/*Sizes*/
+$basicFont: 12px;
+$simpleSpace: 1em;
+$doubleSpace: 2em;
+$tripleSpace: 3em;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $backColor;
+}
+
+h1{
+    font-family: $mainTitleFont;
+}
+
+h2,
+h3 {
+    font-family: $titleFont;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    font-family: $textFont;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+}
