@@ -4,48 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech News</title>
+    <script src="https://kit.fontawesome.com/3bc7d78e54.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Subrayada&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1>Tech News</h1>
-        <p>Noticias seleccionadas para la clase de Acámica</p>
+        <div class="dark-overlay">
+            <div class="header-inner">
+                <h1 class="x-large">Tech News</h1>
+                <p class="lead upper">Noticias seleccionadas para la clase de Acámica</p>
+            </div>
+        </div>
     </header>
     <main class="main">
-
-        <nav class="navbar">
-            <h3>Archivo de noticias:</h3>
-            <ul>
-                <li>India prohibe TikTok</li>
-                <li>¿Censura en Internet en México?</li>
-                <li>Términos Master y Slave</li>
-                <li>Spotify Letras</li>
-                <li>Apps y tu portapapeles</li>
-            </ul>
+        <nav class="navbar p-2">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="py-1">
+                    <li><a href="post1.html">India prohibe TikTok</a></li>
+                    <li><a href="post2.html">¿Censura en Internet en México?</a></li>
+                    <li><a href="post3.html">Términos Master y Slave</a></li>
+                    <li><a href="post4.html">Spotify Letras</a></li>
+                    <li><a href="post5.html">Apps y tu portapapeles</a></li>
+                </ul>
+            </div>
         </nav>
-        <section class="news">
-            <a href="index.html">Regresar a Página Principal</a>
-            <article class="news_post">
+        <section class="news p-2">
+            <article class="news_post complete">
                 <img src="https://www.elespectador.com/resizer/3zPG7-xnBzrw6vLI6zlNaeYwvB4=/657x0/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/RNFNTXP4Q5AFFNS4FZO63Q6Y6M.jpg" alt="">
                     <h2>LinkedIn y TikTok acceden continuamente al portapapeles del celular</h2>
                     <h5>Fuente: <a href="https://www.elespectador.com/noticias/tecnologia/linkedin-y-tiktok-acceden-continuamente-al-portapapeles-del-celular/">El espectador</a></h5>
                     <p>Usuarios de la versión beta del nuevo sistema operativo de Apple informaron que ambas apps ingresan de forma regular a los elementos almacenados en esta herramienta. La primera beta del sistema iOS 14, presentado durante el evento de desarrolladores de Apple WWDC20, ha añadido una función con la que alerta a los usuarios a través de una notificación cada vez que una aplicación accede al contenido almacenado en el portapapeles del móvil. Varios usuarios de la beta de iOS 14 han comenzado a advertir en Twitter, haciendo uso de esta función, que aplicaciones como la red social musical TikTok copian texto del portapapeles con mucha frecuencia, cada vez que el usuario escribe aproximadamente tres caracteres en el teclado.</p>
-                    <a href="post5.html">Seguir leyendo</a>
                 </article>
+            <a class="btn btn-dark m-1" href="index.html">Volver a Página Principal</a>
         </section>
-        <aside class="aside">
+        <aside class="aside p-2">
             <div>
-                <p>Espacio publicitario</p>
-            </div>
-            <div>
-                <p>Espacio publicitario</p>
+                <ul>
+                    <h3 class="large">Lo + leído:</h3>
+                    <li class="py-1"><span class="large">1 </span><a href="post4.html"> Spotify Letras</a></li>
+                    <li class="py-1"><span class="large">2 </span><a href="post5.html"> Apps y tu portapapeles</a></li>
+                    <li class="py-1"><span class="large">3 </span><a href="post1.html"> India prohibe TikTok</a></li>
+                </ul>
             </div>
         </aside>
     </main>
-    <footer class="footer">
-        <div></div>
-        <p>Las noticias mostradas en este diario son propiedad intelectual de sus respectivos autores. Mostradas en este layout solo con fines educativos.</p>
-        <p>2020 - Designed with ♥ by Cyn Romero</p> </footer>
+    <footer class="footer p-2">
+        <div>
+            <p>Las noticias mostradas en este diario son propiedad intelectual de sus respectivos autores.</p>
+            <p>2020 - Designed with ♥ by Cyn Romero</p> 
+        </div> 
+        <div >
+            <a class="m-1" href="#">
+                <i class="fas fa-globe fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
