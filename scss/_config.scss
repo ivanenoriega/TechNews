@@ -1,0 +1,76 @@
+/* Colors*/
+$backcolor: #FFFFFF;
+$textcolor: #000000;
+$primarycolor: #2ea16e;
+$darkcolor: #343a40;
+$lightcolor: #4892f3;
+
+/*Fonts*/
+$mainTitleFont: 'Montserrat Subrayada', sans-serif;
+$titleFont: 'Roboto Slab', serif;
+$textFont: 'Lato', sans-serif;
+
+
+//Text Styles
+.x-large {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.large {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.upper {
+    text-transform: uppercase;
+    
+}
+
+//Set text color based on the background
+@function set-text-color($color) {
+    @if(lightness($color) > 60) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+ }
+
+// Set background and text color
+@mixin  set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+//Margin and Padding
+$spaceamounts: (1,2,3);
+
+@each $space in $spaceamounts {
+    //All around margin
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    //Horizontal Margin
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    //Vertical Margin
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    //All around Padding
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    //Horizontal Padding
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+    //Vertical Padding
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}

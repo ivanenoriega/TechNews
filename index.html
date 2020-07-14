@@ -4,62 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech News</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/3bc7d78e54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Subrayada&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1>Tech News</h1>
+        <div class="dark-overlay">
+            <div class="header-inner">
+                <h1 class="x-large">Tech News</h1>
+                <p class="lead upper">Noticias seleccionadas para la clase de Acámica</p>
+            </div>
+        </div>
     </header>
     <main class="main">
-
-        <nav class="navbar">
-            <h3>Archivo de noticias:</h3>
-            <ul>
-                <li>India prohibe TikTok</li>
-                <li>¿Censura en Internet en México?</li>
-                <li>Términos Master y Slave</li>
-                <li>Spotify Letras</li>
-                <li>Apps y tu portapapeles</li>
-            </ul>
+        <nav class="navbar p-2">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="py-1">
+                    <li><a href="post1.html">India prohibe TikTok</a></li>
+                    <li><a href="post2.html">¿Censura en Internet en México?</a></li>
+                    <li><a href="post3.html">Términos Master y Slave</a></li>
+                    <li><a href="post4.html">Spotify Letras</a></li>
+                    <li><a href="post5.html">Apps y tu portapapeles</a></li>
+                </ul>
+            </div>
         </nav>
-        <section class="news">
-            <article class="news_post">
+        <section class="news p-2">
+            <article class="news_post p-2">
                 <img src="https://www.infobae.com/new-resizer/SgbTfjH-KcZgPZq23u3_rfR3ygQ=/768x432/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/6FZ6O2POYH7LSI6ZSHVGNC2NTY.jpg" alt="">
+                <div class="text-post px-1">
                     <h2>En medio de las tensiones con China, India prohibió TikTok y WeChat por preocupaciones de seguridad</h2>
-                    <p>La medida, que abarca un total de 59 aplicaciones con vínculos a Beijing, es un duro golpe al régimen de Xi Jinping, en el marco del boicot comercial tras el conflicto fronterizo a principios de este mes en el que murieron 20 soldados indios. India prohibió este lunes 59 aplicaciones móviles, en su mayoría chinas, incluyendo TikTok de Bytedance, UC Browser de Alibaba y WeChat de Tencent, alegando preocupaciones de seguridad, dijo el gobierno en un comunicado el lunes. Las aplicaciones están involucradas en actividades “perjudiciales para la soberanía e integridad de la India, la defensa de la India, la seguridad del estado y el orden público”, dijo el Ministerio de Tecnología de la Información.</p>
-                    <h5>Leer más en: <a href="https://www.infobae.com/america/mundo/2020/06/29/en-medio-de-las-tensiones-con-china-india-prohibio-tiktok-y-wechat-por-preocupaciones-de-seguridad/">Infobae</a></h5>
+                    <h5>Fuente: <a href="https://www.infobae.com/america/mundo/2020/06/29/en-medio-de-las-tensiones-con-china-india-prohibio-tiktok-y-wechat-por-preocupaciones-de-seguridad/">Infobae</a></h5>
+                    <p>La medida, que abarca un total de 59 aplicaciones con vínculos a Beijing, es un duro golpe al régimen de Xi Jinping, en el marco del boicot comercial.</p>
+                    <a class="btn btn-primary" href="post1.html">Seguir leyendo</a>
+                </div>
             </article>
-            <article class="news_post">
+            <article class="news_post p-2">
                 <img src="https://www.infobae.com/new-resizer/yQ4k4MPnQaJQD2s9dNow1aidZlM=/768x512/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/RL3HJ7YAYFG2HHKOE7JZGO2UIM.jpg" alt="">
-                    <h2>Las reformas a la Ley de Derecho de Autor podrían censurar tus contenidos en internet incluso sin pruebas</h2>
-                    <p>Con estos cambios, un contenido deberá darse de baja si un tercero lo solicita bajo el argumento de que viola sus derechos de autor aunque no tenga pruebas, entre otras cosas. En los últimos días, tanto el Senado de la República como la Cárama de Diputados aprobaron una serie de reformas a la Ley Federal de Derecho de Autor, aunque diversas organizaciones no gubernamentales han expresado su desacuerdo e incluso acusaron que se trata de una probable intromisión por parte del Estado a la libertad de expresión en medio y plataformas digitales. Lo preocupante es que el retiro de este contenido se llevaría a cabo sin necesidad de aportar prueba alguna de la supuesta infracción y sin que una autoridad judicial lo ordene, en otras palabras, no se estipula un debido proceso en el retiro de contenido en internet y esto se puede interpretar como censura.</p>
-                    <h5>Leer más en: <a href="https://www.infobae.com/america/mexico/2020/07/01/por-que-las-reformas-a-la-ley-de-derecho-de-autor-podrian-censurar-tus-contenidos-en-internet-incluso-sin-pruebas/">Infobae</a></h5>
-            </article>
-            <article class="news_post">
+                    <div class="text-post px-1">
+                        <h2>Las reformas a la Ley de Derecho de Autor podrían censurar tus contenidos en internet incluso sin pruebas</h2>
+                        <h5>Fuente: <a href="https://www.infobae.com/america/mexico/2020/07/01/por-que-las-reformas-a-la-ley-de-derecho-de-autor-podrian-censurar-tus-contenidos-en-internet-incluso-sin-pruebas/">Infobae</a></h5>
+                        <p>Con estos cambios, un contenido deberá darse de baja si un tercero lo solicita bajo el argumento de que viola sus derechos de autor aunque no tenga pruebas.</p>
+                        <a class="btn btn-primary" href="post2.html">Seguir leyendo</a>
+                    </div>
+                </article>
+            <article class="news_post p-2">
                 <img src="https://media.wired.com/photos/5efe3b7039276c283696887a/master/w_2560%2Cc_limit/Github-Coding-Language.jpg" alt="">
-                    <h2>Se confronta el uso en tecnología de los términos "Master" y "Slave"</h2>
-                    <p>Compañías y programadores están reexaminando cómo estos términos técnicos son usados, en medio de las protestas por Black Lives Matters. A algunos les preocupa que estos cambios sean solo simbolismo vacío. Las palabras "master" y "slave" han sido ampliamente usadas por décadas en computación y otros contextos técnicos, como referencia a situaciones en las que un proceso o entidad controla a otro. Ahora, el movimiento Black Lives Matter está trayendo un nuevo escrutinio sobre diversidad y equidad. GitHub reemplazará la palabra "master" como nombre de la rama principal para nuevos repositorios. Mientras más organizaciones reexaminan su lenguaje, los desarrolladores están entrando en debates intensos sobre hasta qué punto este uso de las palabras es significativo.</p>
-                    <h5>Leer más en: <a href="https://www.wired.com/story/tech-confronts-use-labels-master-slave/">WIRED</a></h5>
-            </article>
-            <article class="news_post">
+                    <div class="text-post px-1">
+                        <h2>Se confronta el uso en tecnología de los términos "Master" y "Slave"</h2>
+                        <h5>Fuente: <a href="https://www.wired.com/story/tech-confronts-use-labels-master-slave/">WIRED</a></h5>
+                        <p>Compañías y programadores están reexaminando cómo estos términos técnicos son usados, en medio de las protestas por Black Lives Matters.</p>
+                        <a class="btn btn-primary" href="post3.html">Seguir leyendo</a>
+                    </div>
+                </article>
+            <article class="news_post p-2">
                 <img src="https://www.elespectador.com/resizer/UWqMhlorzpkvq3nZBxJRnrDxCDU=/657x0/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/SXWK6IVVMRARRA7DY4JCWQAEBI.jpg" alt="">
-                    <h2>Spotify Letras, la nueva función de la plataforma</h2>
-                    <p>El servicio de música en streaming lanzó este martes la función para mostrar las letras de las canciones de forma sincronizada a los usuarios de 26 países. Spotify se asoció con Musixmatch, el catálogo más grande del mundo de letras de canciones y traducciones, para ofrecer esta nueva función en 26 países. La nueva función permitirá que los usuarios puedan ver la letra de las canciones que escuchan en tiempo real. Los usuarios podrán acceder a la nueva función haciendo clic en la pestaña “Letras” en la parte inferior de la pantalla de “Reproducción en curso” dentro de la aplicación. </p>
-                    <h5>Leer más en: <a href="https://www.elespectador.com/noticias/tecnologia/spotify-letras-la-nueva-funcion-de-la-plataforma/">El espectador</a></h5>
-            </article>
-            <article class="news_post">
+                    <div class="text-post px-1">
+                        <h2>Spotify Letras, la nueva función de la plataforma</h2>
+                        <h5>Fuente: <a href="https://www.elespectador.com/noticias/tecnologia/spotify-letras-la-nueva-funcion-de-la-plataforma/">El espectador</a></h5>
+                        <p>El servicio de música en streaming lanzó este martes la función para mostrar las letras de las canciones de forma sincronizada a los usuarios de 26 países.</p>
+                        <a class="btn btn-primary" href="post4.html">Seguir leyendo</a>
+                    </div>
+                </article>
+            <article class="news_post p-2">
                 <img src="https://www.elespectador.com/resizer/3zPG7-xnBzrw6vLI6zlNaeYwvB4=/657x0/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/RNFNTXP4Q5AFFNS4FZO63Q6Y6M.jpg" alt="">
-                    <h2>LinkedIn y TikTok acceden continuamente al portapapeles del celular</h2>
-                    <p>Usuarios de la versión beta del nuevo sistema operativo de Apple informaron que ambas apps ingresan de forma regular a los elementos almacenados en esta herramienta. La primera beta del sistema iOS 14, presentado durante el evento de desarrolladores de Apple WWDC20, ha añadido una función con la que alerta a los usuarios a través de una notificación cada vez que una aplicación accede al contenido almacenado en el portapapeles del móvil. Varios usuarios de la beta de iOS 14 han comenzado a advertir en Twitter, haciendo uso de esta función, que aplicaciones como la red social musical TikTok copian texto del portapapeles con mucha frecuencia, cada vez que el usuario escribe aproximadamente tres caracteres en el teclado.</p>
-                    <h5>Leer más en: <a href="https://www.elespectador.com/noticias/tecnologia/linkedin-y-tiktok-acceden-continuamente-al-portapapeles-del-celular/">El espectador</a></h5>
-            </article>
+                    <div class="text-post px-1">
+                        <h2>LinkedIn y TikTok acceden continuamente al portapapeles del celular</h2>
+                        <h5>Fuente: <a href="https://www.elespectador.com/noticias/tecnologia/linkedin-y-tiktok-acceden-continuamente-al-portapapeles-del-celular/">El espectador</a></h5>
+                        <p>Usuarios de la versión beta del nuevo sistema operativo de Apple informaron que ambas apps ingresan de forma regular a esta herramienta.</p>
+                        <a class="btn btn-primary" href="post5.html">Seguir leyendo</a>
+                    </div>
+                </article>
         </section>
-        <aside class="aside"></aside>
+        <aside class="aside p-2">
+            <div>
+                <ul>
+                    <h3 class="large">Lo + leído:</h3>
+                    <li class="py-1"><span class="large">1 </span><a href="post4.html"> Spotify Letras</a></li>
+                    <li class="py-1"><span class="large">2 </span><a href="post5.html"> Apps y tu portapapeles</a></li>
+                    <li class="py-1"><span class="large">3 </span><a href="post1.html"> India prohibe TikTok</a></li>
+                </ul>
+            </div>
+        </aside>
     </main>
-    <footer class="footer">
-        <div></div>
-        <p>Las noticias mostradas en este diario son propiedad intelectual de sus respectivos autores. Mostradas en este layout solo con fines educativos.</p>
-        <p>2020 - Designed with ♥ by Cyn Romero</p> </footer>
+    <footer class="footer p-2">
+        <div>
+            <p>Las noticias mostradas en este diario son propiedad intelectual de sus respectivos autores.</p>
+            <p>2020 - Designed with ♥ by Cyn Romero</p> 
+        </div> 
+        <div >
+            <a class="m-1" href="#">
+                <i class="fas fa-globe fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a class="m-1" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

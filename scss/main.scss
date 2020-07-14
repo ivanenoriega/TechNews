@@ -1,0 +1,50 @@
+@import 'config';
+@import 'components';
+@import 'layout';
+@import 'mobile';
+
+/*Resets*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $textFont;
+    font-size: 1rem;
+    line-height: 1.4;
+    background-color: $backcolor;
+    color: $textcolor;
+}
+
+h1{
+    font-family: $mainTitleFont;
+}
+
+h2,
+h3 {
+    font-family: $titleFont;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $backcolor;
+}
+
+img {
+    width: 100%;
+}
