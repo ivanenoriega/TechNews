@@ -456,6 +456,51 @@
   font-size: 0.8em;
 }
 
+@media (max-width: 700px) {
+  /*Text Styles*/
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .middle,
+  .aside {
+    width: 100vw;
+  }
+  .search {
+    width: 90%;
+  }
+  .search input {
+    width: 50%;
+  }
+  .news {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .footer p {
+    margin-bottom: 1rem;
+  }
+}
+
 /*Resets*/
 * {
   margin: 0;
