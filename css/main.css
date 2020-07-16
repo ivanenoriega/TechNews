@@ -474,7 +474,8 @@
             flex-direction: column;
   }
   .middle,
-  .aside {
+  .aside,
+  .post {
     width: 100vw;
   }
   .search {
