@@ -1,5 +1,6 @@
 /* Colors*/
 /*Fonts*/
+/*Text Styles*/
 .x-large {
   font-size: 4rem;
   line-height: 1.2;
@@ -11,15 +12,21 @@
   margin-bottom: 1rem;
 }
 
+.mediumlarge {
+  font-size: 2rem;
+}
+
 .lead {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .upper {
   text-transform: uppercase;
 }
 
+/*Set text color based on the background*/
+/*Set background and text color*/
+/*Margin and Padding*/
 .m-1 {
   margin: 1rem;
 }
@@ -102,6 +109,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*Search Bar*/
 /*Lateral Menu*/
 .navbar {
   background: -webkit-gradient(linear, left bottom, left top, from(#9c62b3), to(#628cb3));
@@ -161,7 +169,7 @@
 }
 
 .btn.btn-primary:hover {
-  background: #34b57c;
+  background: #4fcd95;
 }
 
 .btn.btn-dark {
@@ -170,7 +178,7 @@
 }
 
 .btn.btn-dark:hover {
-  background: #3f474e;
+  background: #56606a;
 }
 
 /*Hamburguer Menu*/
@@ -187,20 +195,19 @@
 }
 
 #menuToggle a {
-  text-decoration: none;
   color: #232323;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: #2ea16e;
+  color: #34b57c;
 }
 
 #menuToggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 2.5rem;
+  height: 2rem;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -212,9 +219,7 @@
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+/* Hamburger */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -242,10 +247,7 @@
           transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+/*  Transform all the slices of hamburger into a crossmark */
 #menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
@@ -253,34 +255,27 @@
   background: #232323;
 }
 
-/*
- * But let's hide the middle one.
- */
+/* But let's hide the middle one */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
+/* And the last one should go the other direction */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(0, -1px);
           transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
+/* Make this absolute positioned at the top left of the screen */
 #menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: #FFFFFF;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -299,14 +294,13 @@
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
+/* And let's slide it in from the left */
 #menuToggle input:checked ~ ul {
   -webkit-transform: none;
           transform: none;
 }
 
+/*End of the Hamburguer Button*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +350,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .news_post img {
@@ -379,6 +377,21 @@
 .complete img {
   max-width: 50vw;
   margin: 0 auto 1rem;
+}
+
+.main-comments {
+  background-color: #2ea16e;
+}
+
+.main-comments .comment-container {
+  background-color: #77d8ad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-comments .comment-container img {
+  max-width: 100px;
 }
 
 .footer {
