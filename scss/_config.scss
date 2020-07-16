@@ -29,7 +29,7 @@ $textFont: 'Lato', sans-serif;
 }
 .upper {
     text-transform: uppercase;
-    
+    letter-spacing: 0.2rem;
 }
 
 /*Set text color based on the background*/
@@ -75,4 +75,20 @@ $spaceamounts: (1,2,3);
     .py-#{$space} {
         padding: #{$space}rem 0;
     }
+}
+
+/*Grid Posts*/
+@mixin gridposts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45%);
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Flexbox*/
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

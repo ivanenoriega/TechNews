@@ -11,27 +11,10 @@
 /*Search Bar*/
 
 
-/*Lateral Menu*/
-.navbar {
-    background: linear-gradient(0deg, rgba(156,98,179,1) 0%, rgba(98,140,179,1) 100%);
-    width: 10vw;
-    
-    ul {
-        color: $lightcolor;
-        font-family: $titleFont;
-        font-size: 1rem;
-
-        li {
-            margin-bottom: 1rem;
-        }
-    }
-}
-
 /*Lateral Section*/
 .aside {
+    @include flexbox;
     width: 20vw;
-    display: flex;
-    justify-content: center;
     color: $lightcolor;
     border-left: 3px solid $primarycolor;
 
@@ -119,7 +102,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: $backcolor;
+  background: $lightcolor;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
